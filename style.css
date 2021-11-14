@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 html{
@@ -75,15 +77,19 @@ html{
 .hero__section {
     background-color: #052d68;
     background-image: linear-gradient(70deg, #1848cc 0%, #ffffff 100%);
+    justify-content: center;
+    align-items: center;
     /* background-image: linear-gradient(to right, #052d68 0%, #052d68 0%, #052d68 21%, #052d68 52%, #2997bc 78%, #fff); */
     padding: 0 100px;
     color:#fff;
     height: 100vh;
-    clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 96%);
+    clip-path: polygon(0 0, 100% 0%, 100% 80%, 0% 95%);
 }
 
 .hero__wrapper {
     display: grid;
+    justify-content: center;
+    align-items: center;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 600px;
     padding-left: 40px;
@@ -105,7 +111,7 @@ html{
 }
 
 .column__right {
-    margin-top: 200px;
+    /* margin-top: 200px; */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -162,7 +168,7 @@ html{
     align-items: flex-start;
     /* margin-left: 50px; */
     /* gap: 30px; */
-    margin-right: 50px;
+    /* margin-right: 50px; */
 }
 
 .img__sobre{
@@ -180,6 +186,7 @@ html{
 .main__container h1 {
     font-size: 3rem;
     margin-bottom: 20px;
+    font-weight: 500;
 }
 
 .main__container p {
@@ -192,7 +199,7 @@ html{
     color:#1848cc ;
 }
 
-/* SECOND MAIN */ 
+/* SECOND MAIN */  /* OBSOLETO */
 
 .second__main {
     padding: 100px 100px;
@@ -248,6 +255,7 @@ html{
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
+    font-weight: 500;
 }
 
 .client_section__imgs {
@@ -301,6 +309,7 @@ html{
     color: #1848cc;
     font-size: 3rem;
     padding-bottom: 50px;
+    font-weight: 500;
 }
 
 .contact__header h2{
@@ -319,12 +328,13 @@ html{
     justify-content: center;
     padding: 60px;
     box-shadow: 0px 0px 20px #858282;
-    transition: 0.3s ease box-shadow;
+    transition: 0.3s ease ;/*box-shadow;*/
     border-radius: 10px;
 }
 
 .contact__container:hover{
-    box-shadow: 0px 0px 5px 0 #0000002c;
+    /* box-shadow: 0px 0px 5px 0 #0000002c; */
+    transform: translateY(-20px);
 }
 
 .contact__container2{
@@ -335,13 +345,14 @@ html{
     justify-content: center;
     padding: 60px 110px;
     box-shadow: 0px 0px 20px #858282;
-    transition: 0.3s ease box-shadow;
+    transition: 0.3s ease; /*box-shadow; */
     border-radius: 10px;
     
 }
 
 .contact__container2:hover{
-    box-shadow: 0px 0px 5px 0 #0000002c;
+    /* box-shadow: 0px 0px 5px 0 #0000002c; */
+    transform: translateY(-20px);
 }
 
 .contact__container2 a{
