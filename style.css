@@ -83,7 +83,7 @@ html{
     padding: 0 100px;
     color:#fff;
     height: 100vh;
-    clip-path: polygon(0 0, 100% 0%, 100% 80%, 0% 95%);
+    /* clip-path: polygon(0 0, 100% 0%, 100% 80%, 0% 95%); */
 }
 
 .hero__wrapper {
@@ -93,7 +93,30 @@ html{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 600px;
     padding-left: 40px;
+    position: relative;
 }
+
+.custom-shape-divider-bottom-1639619347 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1639619347 svg {
+    position: relative;
+    display: block;
+    width: calc(176% + 1.3px);
+    height: 175px;
+}
+
+.custom-shape-divider-bottom-1639619347 .shape-fill {
+    fill: #FFFFFF;
+}
+
 
 .column__left {
     display: flex;
